@@ -97,12 +97,12 @@ col1, col2 = st.columns([1, 1])  # Equal width columns
 with col1:
     st.subheader("🎤 Music Preferences")
     
-    language = st.text_input("Enter language (e.g., English, Hindi, Spanish)", "")
-    
+    # language = st.text_input("Enter language (e.g., English, Hindi, Spanish)", "")
+    language = st.selectbox("Select Language", ["Hindi", "English", "Marathi","Punjabi", "Sanskrit", "Assamese", "Bengali", "Gujarati", "Kannada", "Konkani", "Maithili", "Malayalam",  "Nepali", "Odia",  "Sindhi", "Tamil", "Telugu", "Urdu", "Spanish", "French", "German", "Italian", "Japanese", "Korean", "Portuguese", "Russian", "Chinese", "Arabic", "Dutch", "Turkish", "Swedish", "Polish", "Greek", "Hebrew", "Thai", "Vietnamese"])
         
         # st.stop()
 
-    singer = st.text_input("Enter Singer (Optional)", "")
+    singer = st.text_input("Enter Singer's name (Optional)", "")
 
     platform = st.selectbox("Select Platform", ["YouTube", "YT Music","Spotify Web","Spotify Phone", "Gaana", "Apple Music", "Amazon Music", "JioSaavn", "Wynk", "Hungama", "SoundCloud", "Tidal", "Deezer"])
 
