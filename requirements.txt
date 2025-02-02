@@ -1,4 +1,7 @@
-﻿absl-py==2.1.0
+pip>=25.0
+setuptools>=75.8.0
+
+absl-py==2.1.0
 aioice==0.9.0
 aiortc==1.10.0
 altair==5.5.0
@@ -45,15 +48,12 @@ ml-dtypes==0.4.1
 namex==0.0.8
 narwhals==1.24.1
 numpy==1.26.4
-opencv-contrib-python==4.11.0.86
-opencv-python==4.11.0.86
-opencv-python-headless==4.9.0.80
+opencv-python-headless==4.9.0.80  # Use this OR opencv-python, not both
 opt_einsum==3.4.0
 optree==0.14.0
 packaging==24.2
 pandas==2.2.3
 pillow==11.1.0
-pip==25.0
 protobuf==4.25.6
 pyarrow==19.0.0
 pycparser==2.22
@@ -71,17 +71,9 @@ rich==13.9.4
 rpds-py==0.22.3
 scipy==1.15.1
 sentencepiece==0.2.0
-setuptools==75.8.0
-six==1.17.0
-smmap==5.0.2
-sounddevice==0.5.1
-streamlit==1.41.1
-streamlit-webrtc==0.47.9
-tenacity==9.0.0
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2
-tensorflow==2.18.0
-tensorflow_intel==2.18.0
+tensorflow==2.18.0  # If issues, downgrade to 2.17.0
 termcolor==2.5.0
 toml==0.10.2
 tornado==6.4.2
